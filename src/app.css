@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+	--color-bg: #18181b;
+}
+
+*,
+::after,
+::before {
+	font-size: medium;
+	font-weight: 400;
+	font-family: 'Fira Sans', sans-serif;
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-color: var(--color-bg);
+	overflow: hidden;
+}
+
+::-webkit-scrollbar {
+	width: 0.6rem;
+	background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+	background: #214d76;
+	border-radius: 0.5rem;
+}
+
+.container,
+.main-container {
+	width: 100%;
+	height: 100%;
+}
+
+.chat {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.chat > h1 {
+	color: #ffffff;
+	font-size: larger;
+}
+
+.scrollable {
+	flex: 1 1 auto;
+	border-top: 1px solid #eee;
+	margin: 0 0 0.5em 0;
+	overflow-y: auto;
+}
+
+article {
+	margin: 0.5em 0;
+}
+
+.user {
+	text-align: right;
+}
+
+span {
+	padding: 0.5em 1em;
+	display: inline-block;
+}
+
+.eliza span {
+	background-color: #eee;
+	border-radius: 1em 1em 1em 0;
+}
+
+.user span {
+	background-color: #0074d9;
+	color: white;
+	border-radius: 1em 1em 0 1em;
+}
+
+.msg {
+	max-width: 500px;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.msg > .input {
+	width: 100%;
+	margin: 5px;
+	padding: 4px 8px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+.msg > button {
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	border-radius: 100%;
+}
